@@ -114,6 +114,7 @@ public class Jogo extends javax.swing.JFrame {
         if(login.equals("jogador") && senha.equals("123")){
         Menu menu = new Menu();
         menu.setVisible(true);
+        menu.setLabel(login);
         this.setVisible(false);
         }
         else{
