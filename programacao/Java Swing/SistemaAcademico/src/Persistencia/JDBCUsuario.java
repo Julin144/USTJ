@@ -3,19 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Animais;
 
+package Persistencia;
+import java.sql.Connection;  
 /**
  *
  * @author 822158274
  */
-public class Gato extends Mamifero{
-    
-    public Gato(String nome, int nujmeroPatas) {
-        super(nome, 4);
+public class JDBCUsuario {
+    Connection conexao;
+
+    public JDBCUsuario(Connection conexao) {
+        this.conexao = conexao;
     }
 
-    Gato() {
+    public JDBCUsuario() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
